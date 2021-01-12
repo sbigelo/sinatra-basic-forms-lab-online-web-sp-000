@@ -11,7 +11,13 @@ class App < Sinatra::Base
   end
 
   post '/puppy' do
+    pl = Puppy.new 
+    @puppy = pl.params[:submit]
     erb :display_puppy
   end
 
 end
+
+
+# pl = PigLatinizer.new
+#     @piglatin = pl.piglatinize(params[:user_phrase])
