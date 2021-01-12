@@ -15,7 +15,7 @@ attr_reader :breed
   def self.all
     @@all
   end
-  
+
 
 
 end
