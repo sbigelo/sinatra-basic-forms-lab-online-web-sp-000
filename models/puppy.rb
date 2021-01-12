@@ -3,17 +3,17 @@ class Puppy
 attr_accessor :name, :age
 attr_reader :breed
 
-@@all = []
+@puppy = []
 
   def initialization(name, breed, age)
     @name = name
     @breed = breed
     @age = age
-    @@all << self
+    @puppy << self
   end
 
   def self.all
-    @@all
+    @puppy
   end
 
 
